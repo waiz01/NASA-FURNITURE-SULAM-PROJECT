@@ -78,8 +78,8 @@
                 <span class="quantity">qty : 1kg</span>
             </div>
         </div>
-        <div class="total"> total :  &#8377 250/- </div>
-        <a href="#" class="btn">checkout</a>
+        <div class="total"></div>
+        <a href="#" class="btn">See More</a>
     </div>
 
     <form action="" class="login-form">

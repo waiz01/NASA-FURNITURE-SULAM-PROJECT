@@ -1,53 +1,115 @@
 <!DOCTYPE html>
 <html>
+	
+	
+
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Product Card/Page</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="stylePD.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	  
+
   </head>
-  <body>
-    
+  <body> 
+	  <header class="header">
+
+    <a href="index.php" class="logo"> <i class="fas fa-shopping-basket"></i> NasaFurniture  </a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#features">features</a>
+        <a href="#products">products</a>
+        <a href="#categories">categories</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blogs</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/Matar-Paneer-1.jpg" alt="">
+            <div class="content">
+                <h3>Matar paneer</h3>
+                <span class="price"> &#8377 60/-</span>
+                <span class="quantity">qty : 1kg</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/ladyfinger.webp" alt="">
+            <div class="content">
+                <h3> Fried - Bhindi</h3>
+                <span class="price"> &#8377 40 /-</span>
+                <span class="quantity">qty : 1kg</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="img/pneer.jpg" alt="">
+            <div class="content">
+                <h3>paneer</h3>
+                <span class="price"> &#8377 150/-</span>
+                <span class="quantity">qty : 1kg</span>
+            </div>
+        </div>
+        <div class="total"> total :  &#8377 250/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <form action="" class="login-form">
+        
+		<!-- <input type="submit" name="login" value="login now" class="btn" onclick="bl()">
+			<input type="submit" name="register" value="register now" class="btn" onclick="br()"> -->
+		<a href="login.php" class="btn">login now</a>
+			<a href="register.php" class="btn">register now</a>
+			
+		
+	
+      
+    </form>
+  <script>
+		function bl(){
+			header("Location: login.php");
+		}
+		function br(){
+			echo windows.location.assign('register.php');
+		}
+	</script>
+</header> 
     <div class = "card-wrapper">
       <div class = "card">
         <!-- card left -->
         <div class = "product-imgs">
           <div class = "img-display">
             <div class = "img-showcase">
-              <img src = "shoes_images/chair1.jpg" alt = "shoe image">
-              <img src = "shoes_images/chair2.jpg" alt = "shoe image">
-              <img src = "shoes_images/shoe_3.jpg" alt = "shoe image">
-              <img src = "shoes_images/shoe_4.jpg" alt = "shoe image">
+              <img src = "shoes_images/chair1.png" alt = "shoe image">
+              <img src = "shoes_images/chair2.png" alt = "shoe image">
+              <img src = "shoes_images/chair3.png" alt = "shoe image">
+              <img src = "shoes_images/chair4.png" alt = "shoe image">
             </div>
           </div>
-          <div class = "img-select">
-            <div class = "img-item">
-              <a href = "#" data-id = "1">
-                <img src = "shoes_images/shoe_1.jpg" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "2">
-                <img src = "shoes_images/shoe_2.jpg" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "3">
-                <img src = "shoes_images/shoe_3.jpg" alt = "shoe image">
-              </a>
-            </div>
-            <div class = "img-item">
-              <a href = "#" data-id = "4">
-                <img src = "shoes_images/shoe_4.jpg" alt = "shoe image">
-              </a>
-            </div>
-          </div>
+			
+		
         </div>
+
         <!-- card right -->
         <div class = "product-content">
-          <h2 class = "product-title">nike shoes</h2>
+          <h2 class = "product-title">G-ORANGE CHAIR</h2>
           <a href = "#" class = "product-link">visit nike store</a>
           <div class = "product-rating">
             <i class = "fas fa-star"></i>
@@ -77,15 +139,15 @@
           </div>
 
           <div class = "purchase-info">
-            <input type = "number" min = "0" value = "1">
+           
             <button type = "button" class = "btn">
-              Add to Cart <i class = "fas fa-shopping-cart"></i>
+              Add to Favourite <i class = "fas fa-shopping-cart"></i>
             </button>
           <!--  <button type = "button" class = "btn">Compare</button> -->
           </div>
 
           <div class = "social-links">
-            <p>Share At: </p>
+            <p>Contact Us: </p>
             <a href = "#">
               <i class = "fab fa-facebook-f"></i>
             </a>
@@ -107,6 +169,53 @@
     </div>
 
     
-    <script src="scriptPD.js"></script>
+    <script src="script.js"></script>
   </body>
+	
+	<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> groco <i class="fas fa-shopping-basket"></i> </h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a target="_blank" href="#" class="fab fa-facebook-f"> </a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +917415192154 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +918962315400 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> Abhishekparihar@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Indore, india - 452001 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> mr. abhishek parihar </span> | all rights reserved </div>
+
+</section>
 </html>
