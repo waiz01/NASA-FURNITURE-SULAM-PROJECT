@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NasaFurniture</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    		<!-- Google Font -->
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,700,900' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+
+		<!-- all css here -->
+		<!-- bootstrap v3.3.6 css -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- animate css -->
+		<link rel="stylesheet" href="css/animate.min.css">
+		<!-- jquery-ui.min css -->
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+		<!-- meanmenu css -->
+		<link rel="stylesheet" href="css/meanmenu.min.css">
+		<!-- nivo-slider css -->
+		<link rel="stylesheet" href="lib/css/nivo-slider.css">
+		<link rel="stylesheet" href="lib/css/preview.css">
+		<!-- slick css -->
+		<link rel="stylesheet" href="css/slick.min.css">
+		<!-- lightbox css -->
+		<link rel="stylesheet" href="css/lightbox.min.css">
+		<!-- material-design-iconic-font css -->
+		<link rel="stylesheet" href="css/material-design-iconic-font.css">
+		<!-- All common css of theme -->
+		<link rel="stylesheet" href="css/default.css">
+		<!-- style css -->
+		<link rel="stylesheet" href="style.min.css">
+        <!-- shortcode css -->
+        <link rel="stylesheet" href="css/shortcode.css">
+		<!-- responsive css -->
+		<link rel="stylesheet" href="css/responsive.css">
+		<!-- modernizr css -->
+		<script src="js/vendor/modernizr-3.11.2.min.js"></script>
+
+        <script src=
+    "https://code.jquery.com/jquery-1.12.4.min.js">
+        </script>
+        <style type="text/css">
+            .selectt {
+                color: #fff;
+                padding: 100px;
+                display: none;
+                margin-top: 30px;
+                width: 60%;
+                background: gray
+            }
+              
+            label {
+                margin-right: 20px;
+            }
+        </style>
+    </head>
+    <body>
+<div>
+    <header class="header">
+
+        <a href="#" class="logo"> <i class="fas fa-shopping-basket"></i> NasaFurniture  </a>
+    
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#features">features</a>
+            <a href="#products">products</a>
+            <a href="#categories">categories</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+    
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="search here...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+    
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/Matar-Paneer-1.jpg" alt="">
+                <div class="content">
+                    <h3>Matar paneer</h3>
+                    <span class="price"> &#8377 60/-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/ladyfinger.webp" alt="">
+                <div class="content">
+                    <h3> Fried - Bhindi</h3>
+                    <span class="price"> &#8377 40 /-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fas fa-trash"></i>
+                <img src="img/pneer.jpg" alt="">
+                <div class="content">
+                    <h3>paneer</h3>
+                    <span class="price"> &#8377 150/-</span>
+                    <span class="quantity">qty : 1kg</span>
+                </div>
+            </div>
+            <div class="total"> total :  &#8377 250/- </div>
+            <a href="#" class="btn">checkout</a>
+        </div>
+    
+        <form action="" class="login-form">
+            
+            <!-- <input type="submit" name="login" value="login now" class="btn" onclick="bl()">
+                <input type="submit" name="register" value="register now" class="btn" onclick="br()"> -->
+            <a href="login.php" class="btn">login now</a>
+                <a href="register.php" class="btn">register now</a>
+                
+            
+        
+          
+        </form>
+      <script>
+            function bl(){
+                header("Location: login.php");
+            }
+            function br(){
+                echo windows.location.assign('register.php');
+            }
+        </script>
+    </header>
+    
+    <!-- header section ends -->
+
+        <center style="padding-top: 100px;">
+            <div>
+                <label>
+                    <input type="checkbox" name="colorCheckbox"
+                        value="Chair"> Chair</label>
+                <label>
+                    <input type="checkbox" name="colorCheckbox"
+                        value="Sofa"> Sofa</label>
+                <label>
+                    <input type="checkbox" name="colorCheckbox"
+                        value="Closet"> Closet</label>
+                <label>
+                    <input type="checkbox" name="colorCheckbox"
+                        value="SlidingDoor"> Sliding Door</label>
+                <label>
+                    <input type="checkbox" name="colorCheckbox"
+                            value="Table"> Table</label>
+            </div>
+
+		<div class="Chair selectt">
+            <a href="single-product.html"><img src="image\chair1.png"width="20%" height="20%" alt="" /></a>
+            <p>chair1</p>
+            <a href="single-product.html"><img src="image\chair2.png"width="20%" height="20%" alt="" /></a>
+            <p>chair2</p>
+            <a href="single-product.html"><img src="image\chair3.png"width="20%" height="20%" alt="" /></a>
+            <p>chair3</p>
+            <a href="single-product.html"><img src="image\chair4.png"width="20%" height="20%" alt="" /></a>
+            <p>chair4</p>
+            <a href="single-product.html"><img src="image\chair5.png"width="20%" height="20%" alt="" /></a>
+            <p>chair5</p>
+        </div>>
+		<div class="Sofa selectt">
+        <a href="single-product.html"><img src="image\sofa1.png"width="20%" height="20%" alt="" /></a>
+        <p>Sofa1</p>
+        <a href="single-product.html"><img src="image\sofa2.png"width="20%" height="20%" alt="" /></a>
+        <p>Sofa2</p>
+        <a href="single-product.html"><img src="image\sofa3.png"width="20%" height="20%" alt="" /></a>
+        <p>Sofa3</p>
+        <a href="single-product.html"><img src="image\sofa4.png"width="20%" height="20%" alt="" /></a>
+        <p>Sofa4</p>
+        <a href="single-product.html"><img src="image\sofa5.png"width="20%" height="20%" alt="" /></a>
+        <p>Sofa5</p>
+		</div>
+
+		<div class="Closet selectt">
+            <a href="single-product.html"><img src="image\closet1.png"width="20%" height="20%" alt="" /></a>
+            <p>Closet1</p>
+            <a href="single-product.html"><img src="shoes_images\closet2.png"width="20%" height="20%" alt="" /></a>
+            <p>Closet2</p>
+            <a href="single-product.html"><img src="shoes_images\closet3.png"width="20%" height="20%" alt="" /></a>
+            <p>Closet3</p>
+            <a href="single-product.html"><img src="image\closet4.png"width="20%" height="20%" alt="" /></a>
+            <p>Closet4</p>
+            <a href="single-product.html"><img src="image\closet5.png"width="20%" height="20%" alt="" /></a>
+            <p>Closet5</p>
+        </div>
+		<div class="SlidingDoor selectt">
+            <a href="single-product.html"><img src="shoes_images\slidingdoor1.png"width="20%" height="20%" alt="" /></a>
+            <p>SD1</p>
+            <a href="single-product.html"><img src="shoes_images\slidingdoor2.png"width="20%" height="20%" alt="" /></a>
+            <p>SD2</p>
+            <a href="single-product.html"><img src="shoes_images\slidingdoor3.png"width="20%" height="20%" alt="" /></a>
+            <p>SD3</p>
+            <a href="single-product.html"><img src="shoes_images\slidingdoor4.png"width="20%" height="20%" alt="" /></a>
+            <p>SD4</p>
+            <a href="single-product.html"><img src="shoes_images\slidingdoor5.png"width="20%" height="20%" alt="" /></a>
+            <p>SD5</p>
+            <a href="single-product.html"><img src="shoes_images\slidingdoor6.png"width="20%" height="20%" alt="" /></a>
+            <p>SD6</p>
+        </div>
+        <div class="Table selectt">
+            <a href="single-product.html"><img src="shoes_images\set1.png"width="20%" height="20%" alt="" /></a>
+            <p>Table1</p>
+            <a href="single-product.html"><img src="shoes_images\set3.png"width="20%" height="20%" alt="" /></a>
+            <p>Table2</p>
+            <a href="single-product.html"><img src="shoes_images\set4.png"width="20%" height="20%" alt="" /></a>
+            <p>Table3</p>
+            <a href="single-product.html"><img src="shoes_images\set5.png"width="20%" height="20%" alt="" /></a>
+            <p>Table4</p>
+            <a href="single-product.html"><img src="shoes_images\set6.png"width="20%" height="20%" alt="" /></a>
+            <p>Table5</p>
+    </div>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$('input[type="checkbox"]').click(function() {
+					var inputValue = $(this).attr("value");
+					$("." + inputValue).toggle();
+
+				});
+			});
+		</script>
+	</center>
+</div>
+</body>
+
+</html>					
+                                           
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3> NasaFurniture <i class="fas fa-shopping-basket"></i> </h3>
+            <p>--detail of the company-- and location</p>
+            <div class="share">
+                <a target="_blank" href="#" class="fab fa-facebook-f"> </a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +01114127143 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> +01113214432 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> NasaFurnatureCo@gmail.com </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Kuala Terengganu, Terengganu - 876877 </a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="credit"> created by <span> NasaFurniture Company </span> | all rights reserved </div>
+
+</section>
+
+<!-- footer section ends -->
